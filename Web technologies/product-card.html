@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-commerce product card demonstrating global box-sizing, border-radius, box-shadow, overflow hidden, positioned badge, object-fit, and hover/active/transition states.">
+  <title>E-Commerce Product Card — Lab Task 3</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="product-card.css">
+</head>
+<body>
+
+  <!-- PRODUCT CARD -->
+  <div class="product-card" id="product-card">
+
+    <!-- Image Wrapper (position: relative for badge) -->
+    <div class="product-image-wrapper">
+      <img src="Shoes.jpg" alt="AeroStride Pro Running Shoes" class="product-image" id="product-image">
+
+      <!-- Sale Badge (position: absolute) -->
+      <span class="product-badge" id="product-badge">-30% OFF</span>
+    </div>
+
+    <!-- Product Body -->
+    <div class="product-body">
+
+      <!-- Category -->
+      <p class="product-category" id="product-category">Running Shoes</p>
+
+      <!-- Product Name -->
+      <h1 class="product-name" id="product-name">AeroStride Pro Running Shoes</h1>
+
+      <!-- Description -->
+      <p class="product-description" id="product-description">
+        Lightweight, breathable running shoes with responsive cushioning
+        and a durable outsole. Designed for everyday comfort and peak
+        performance on any terrain.
+      </p>
+
+      <!-- Price: Current & Original -->
+      <div class="product-price-row" id="product-price">
+        <span class="product-price-current">$56.99</span>
+        <span class="product-price-original">$122.99</span>
+      </div>
+
+      <!-- Stock Status -->
+      <p class="product-stock in-stock" id="product-stock">✔ In Stock</p>
+
+      <!-- Action Buttons -->
+      <div class="product-actions" id="product-actions">
+        <button class="btn-add-cart" id="btn-add-cart" type="button">Add to Cart</button>
+        <button class="btn-wishlist" id="btn-wishlist" type="button">♡</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

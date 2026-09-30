@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #167a98;
+  padding: 40px 20px;
+}
+
+/* ============================================
+   ARTICLE CARD
+   ============================================ */
+.article-card {
+  width: 520px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 28px 32px;
+  transition: box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================
+   CATEGORY (smallest text — hierarchy level 4)
+   ============================================ */
+.article-category {
+  display: inline-block;
+  font-size: 0.7rem;                         /* font-size: small */
+  font-weight: 600;                          /* font-weight: semi-bold */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background-color: #c0755c;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  line-height: 1.4;                          /* line-height */
+}
+
+
+.article-title {
+  font-size: 1.5rem;                         /* font-size: large */
+  font-weight: 700;                          /* font-weight: bold */
+  color: #222;
+  line-height: 1.3;                          /* line-height */
+  margin-bottom: 12px;
+}
+
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.8rem;                         
+  font-weight: 400;                          
+  color: #888;
+  line-height: 1.4;                        
+}
+
+.article-author {
+  font-weight: 600;                         
+  color: #555;
+}
+
+.meta-separator {
+  color: #183351;
+}
+
+ */
+.article-description {
+  font-size: 0.9rem;                        
+  font-weight: 400;                          
+  color: #555;
+  line-height: 1.7;                         
+  margin-bottom: 24px;
+}
+
+
+
+/* :link — unvisited link */
+.article-link:link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5c6bc0;
+  text-decoration: none;
+  padding: 10px 24px;
+  border: 2px solid #c05c8c;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* :visited — already visited link */
+.article-link:visited {
+  color: #7e57c2;
+  border-color: #7e57c2;
+}
+
+/* :hover — mouse over */
+.article-link:hover {
+  background-color: #5c6bc0;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* :focus — keyboard focus */
+.article-link:focus {
+  outline: 3px solid rgba(92, 107, 192, 0.4);
+  outline-offset: 2px;
+}
+
+/* :active — being clicked */
+.article-link:active {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+  color: #ffffff;
+  transform: translateY(1px);
+}
